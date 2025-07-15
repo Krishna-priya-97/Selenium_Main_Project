@@ -18,7 +18,7 @@ public class TerminationTestClass extends BaseClass {
 	DashBoardPageClass dp;
 	TerminationPageClass tn;
 
-	@Test(priority=1)
+	@Test(priority=11)
 	public void verifyToAddTermination() throws IOException {
 
 		lp = new LoginPageClass(driver);
@@ -44,7 +44,7 @@ public class TerminationTestClass extends BaseClass {
 
 	}
 
-	@Test(priority=2)
+	@Test(priority=12)
 	public void verifyToDeleteTermination() throws IOException {
 
 		lp = new LoginPageClass(driver);

@@ -16,7 +16,7 @@ import org.testng.annotations.AfterMethod;
 
 public class BaseClass {
 
-	public WebDriver driver;
+	public static WebDriver driver;
 	
 	public static Properties property;
 	public static void readProperty() throws IOException {

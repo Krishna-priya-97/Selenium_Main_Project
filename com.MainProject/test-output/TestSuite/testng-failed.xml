@@ -3,16 +3,18 @@
 <suite name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="retry.RetryListner"/>
+    <listener class-name="extendReport.TestListener"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="TestClasses.TerminationTestClass">
+      <class name="TestClasses.DashBoardTestClass">
         <methods>
+          <include name="createReport"/>
           <include name="beforeMethod"/>
-          <include name="verifyToDeleteTermination"/>
+          <include name="verifyDashboardURL"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- TestClasses.TerminationTestClass -->
+      </class> <!-- TestClasses.DashBoardTestClass -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->
