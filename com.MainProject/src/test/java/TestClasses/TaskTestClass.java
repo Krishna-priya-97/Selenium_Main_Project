@@ -22,7 +22,7 @@ public class TaskTestClass extends BaseClass {
 	DashBoardPageClass dp;
 	TaskPageClass tk;
 
-	@Test
+	@Test(priority=1)
 	public void verifyToImportTask() throws IOException {
 
 		lp = new LoginPageClass(driver);
@@ -40,7 +40,7 @@ public class TaskTestClass extends BaseClass {
 
 	}
 
-	@Test
+	@Test(priority=2)
 	public void verifyToCreateNewTask() throws IOException {
 
 		lp = new LoginPageClass(driver);

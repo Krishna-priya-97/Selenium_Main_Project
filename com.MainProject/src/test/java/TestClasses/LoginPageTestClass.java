@@ -16,7 +16,7 @@ public class LoginPageTestClass extends BaseClass {
 	LoginPageClass lp;
 	DashBoardPageClass dp;
 
-	@Test
+	@Test(priority=1)
 	public void verifySuccessfulLogin() throws IOException {
 
 		lp = new LoginPageClass(driver);
@@ -27,7 +27,7 @@ public class LoginPageTestClass extends BaseClass {
 
 	}
 
-	@Test(dataProvider = "unSuccessfulLogin",dataProviderClass=DataProviderClass.class)
+	@Test(dataProvider = "unSuccessfulLogin",dataProviderClass=DataProviderClass.class,priority=2)
 	public void verifyUnsuccessfulLogin(String u,String p) throws IOException {
 
 		lp = new LoginPageClass(driver);

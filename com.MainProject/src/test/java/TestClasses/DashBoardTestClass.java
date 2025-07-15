@@ -15,7 +15,7 @@ public class DashBoardTestClass extends BaseClass {
 	LoginPageClass lp;
 	DashBoardPageClass dp;
 
-	@Test
+	@Test(priority=1)
 	public void verifyPageTitle() throws IOException {
 
 		lp = new LoginPageClass(driver);
@@ -25,7 +25,7 @@ public class DashBoardTestClass extends BaseClass {
 		Assert.assertEquals(title,ExcelReadUtility.getStringData(1, 0, "Dashboard"));
 	}
 
-	@Test
+	@Test(priority=2)
 	public void verifyDashboardURL() throws IOException {
 
 		lp = new LoginPageClass(driver);
@@ -35,7 +35,7 @@ public class DashBoardTestClass extends BaseClass {
 		Assert.assertEquals(url, "https://erp.qabible.in/admin/dashboard");
 	}
 
-	@Test
+	@Test(priority=3)
 	public void verifyLogo() throws IOException {
 
 		lp = new LoginPageClass(driver);
@@ -47,7 +47,7 @@ public class DashBoardTestClass extends BaseClass {
 		
 	}
 
-	@Test
+	@Test(priority=4)
 	public void verifySidebarMenuExpandsOnClick() throws IOException {
 
 		lp = new LoginPageClass(driver);
@@ -59,7 +59,7 @@ public class DashBoardTestClass extends BaseClass {
 		
 	}
 
-	@Test
+	@Test(priority=5)
 	public void verifyDashboardMenuExpandsOnClick() throws IOException {
 
 		lp = new LoginPageClass(driver);
@@ -70,7 +70,7 @@ public class DashBoardTestClass extends BaseClass {
 		Assert.assertEquals(invoiceToday,ExcelReadUtility.getStringData(2, 0, "Dashboard"));
 	}
 	
-	@Test
+	@Test(priority=6)
 	public void verifyTheTooltipTerminationIsShowingWhileHoveringMouseOnElement() throws IOException {
 		
 		lp = new LoginPageClass(driver);

@@ -1,6 +1,9 @@
 package Base;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+
+import extendReport.ExtentManager;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -42,5 +45,9 @@ public class BaseClass {
 		
 		driver.quit();
 	}
-
+	
+	@BeforeSuite(alwaysRun = true)
+	public void createReport() {
+		ExtentManager.createInstance();
+	}
 }
