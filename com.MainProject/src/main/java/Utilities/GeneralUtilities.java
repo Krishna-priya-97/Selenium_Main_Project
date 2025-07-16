@@ -72,7 +72,7 @@ public class GeneralUtilities {
 		public void mouseHoverAndClick(WebDriver driver, WebElement element) {
 			Actions actions = new Actions(driver);
 			actions.moveToElement(element).click().build().perform();
-			
+			 
 		}
 		
 		//file upload

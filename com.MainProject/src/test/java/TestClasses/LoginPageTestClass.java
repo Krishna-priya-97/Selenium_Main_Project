@@ -16,7 +16,7 @@ public class LoginPageTestClass extends BaseClass {
 	LoginPageClass lp;
 	DashBoardPageClass dp;
 
-	@Test(priority=1)
+	@Test(priority=1,groups = {"Group 1"})
 	public void verifySuccessfulLogin() throws IOException {
 
 		lp = new LoginPageClass(driver);

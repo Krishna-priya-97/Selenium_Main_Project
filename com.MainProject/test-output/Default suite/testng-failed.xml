@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestClasses.DashBoardTestClass">
+      <class name="TestClasses.TaskTestClass">
         <methods>
+          <include name="verifyToImportTask"/>
           <include name="createReport"/>
           <include name="beforeMethod"/>
-          <include name="verifyTheTooltipTerminationIsShowingWhileHoveringMouseOnElement"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- TestClasses.DashBoardTestClass -->
+      </class> <!-- TestClasses.TaskTestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -22,7 +22,7 @@ public class TaskTestClass extends BaseClass {
 	DashBoardPageClass dp;
 	TaskPageClass tk;
 
-	@Test(priority=9)
+	@Test(priority=1)
 	public void verifyToImportTask() throws IOException {
 
 		lp = new LoginPageClass(driver);
@@ -33,14 +33,13 @@ public class TaskTestClass extends BaseClass {
 		tk = new TaskPageClass(driver);
 		tk.clickOnImportTasks();
 		String file=tk.getTextOfSelectFile();
-		tk.uploadFile("D:\\JAVA\\com.MainProject\\src\\test\\resources\\uploaddocument.doc");
+		tk.uploadFile(System.getProperty("user.dir")+"\\src\\test\\resources\\uploaddocument.doc");
 		String change=tk.getTextOfChange();
 		Assert.assertNotEquals(file, change);
-		tk.clickOnUpload();
 
 	}
 
-	@Test(priority=10)
+	@Test(priority=2)
 	public void verifyToCreateNewTask() throws IOException {
 
 		lp = new LoginPageClass(driver);

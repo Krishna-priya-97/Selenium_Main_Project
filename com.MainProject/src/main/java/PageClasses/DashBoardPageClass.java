@@ -90,9 +90,9 @@ public class DashBoardPageClass {
 		glu.mouseHoverElement_Utility(driver, terminatn);
 	}
 
-	public String getTextOfTermination() {
-
-		return glu.getTextOfElements(terminatn);
+	public String getAttributeOfTermination(){
+		
+		return glu.getAttributeOfElement(termination,"title");
 	}
 	
 	public void clickOnTasks() {
