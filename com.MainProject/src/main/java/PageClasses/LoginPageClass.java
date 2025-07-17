@@ -34,7 +34,7 @@ public class LoginPageClass {
 
 		username.sendKeys(uname);
 		password.sendKeys(pword);
-		wu.waitForElementToBeClickableByXpathLocator(driver, "//button[@type='submit']", 3);
+		wu.waitForElementToBeClickableByXpathLocator(driver, "//button[@type='submit']", 10);
 		signIn.click();
 		
 		return new DashBoardPageClass(driver);

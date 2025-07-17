@@ -56,9 +56,9 @@ public class TaskPageClass {
 		importTasks.click();
 	}
 
-	public void uploadFile(String fileName) {
-
-		chooseFile.sendKeys(fileName);
+	public void uploadFile() {
+		
+		glu.fileUpload(chooseFile,System.getProperty("user.dir")+"\\src\\test\\resources\\uploaddocument.doc");
 
 	}
 

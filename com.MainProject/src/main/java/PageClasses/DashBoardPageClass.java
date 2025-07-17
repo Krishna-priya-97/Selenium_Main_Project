@@ -43,7 +43,7 @@ public class DashBoardPageClass {
 
 	public void clickOnSidebarMenu() {
 
-		wu.waitForElementToBeClickableByXpathLocator(driver, "//a[@title='Dashboard']", 3);
+		wu.waitForElementToBeClickableByXpathLocator(driver, "//a[@title='Dashboard']", 10);
 		sidebarDashboard.click();
 
 	}
@@ -79,9 +79,10 @@ public class DashBoardPageClass {
 		return glu.getTextOfElements(invoice);
 	}
 
-	public void clickOnTermination() {
+	public  TerminationPageClass clickOnTermination() {
 
 		terminatn.click();
+		return new TerminationPageClass(driver);
 
 	}
 
@@ -95,9 +96,10 @@ public class DashBoardPageClass {
 		return glu.getAttributeOfElement(termination,"title");
 	}
 	
-	public void clickOnTasks() {
+	public TaskPageClass clickOnTasks() {
 		
 		tasks.click();
+		return new TaskPageClass(driver);
 	}
 
 }

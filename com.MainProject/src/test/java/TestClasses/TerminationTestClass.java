@@ -24,9 +24,8 @@ public class TerminationTestClass extends BaseClass {
 		lp = new LoginPageClass(driver);
 		dp=lp.sign_in(ExcelReadUtility.getStringData(2, 0, "LoginPage"),ExcelReadUtility.getIntData(2, 1, "LoginPage"));
 
-		dp.clickOnTermination();
+		tn=dp.clickOnTermination();
 
-		tn = new TerminationPageClass(driver);
 		tn.clickOnNewTermination();
 		tn.clickOnEmployeeName();
 		tn.employeeNameInsertionViaSendKeys(ExcelReadUtility.getStringData(0, 0, "Termination"));
@@ -50,9 +49,8 @@ public class TerminationTestClass extends BaseClass {
 		lp = new LoginPageClass(driver);
 		dp=lp.sign_in(ExcelReadUtility.getStringData(2, 0, "LoginPage"),ExcelReadUtility.getIntData(2, 1, "LoginPage"));
 		
-		dp.clickOnTermination();
+		tn=dp.clickOnTermination();
 		
-		tn=new TerminationPageClass(driver);
 		tn.clickOnSearchAllColumns();
 		tn.searchViaSendKeys(ExcelReadUtility.getStringData(0, 0, "Termination"));
 		String name=tn.getTextOfName();

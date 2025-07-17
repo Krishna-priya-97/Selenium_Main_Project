@@ -6,15 +6,48 @@
     <listener class-name="extendReport.TestListener"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
+      <class name="TestClasses.LoginPageTestClass">
+        <methods>
+          <include name="verifySuccessfulLogin"/>
+          <include name="beforeMethod"/>
+          <include name="createReport"/>
+          <include name="verifyUnsuccessfulLogin"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- TestClasses.LoginPageTestClass -->
       <class name="TestClasses.DashBoardTestClass">
         <methods>
-          <include name="createReport"/>
           <include name="beforeMethod"/>
+          <include name="createReport"/>
           <include name="verifyDashboardURL"/>
+          <include name="verifySidebarMenuExpandsOnClick"/>
+          <include name="verifyLogo"/>
+          <include name="verifyDashboardMenuExpandsOnClick"/>
+          <include name="verifyTheTooltipTerminationIsShowingWhileHoveringMouseOnElement"/>
+          <include name="verifyPageTitle"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- TestClasses.DashBoardTestClass -->
+      <class name="TestClasses.TerminationTestClass">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="createReport"/>
+          <include name="verifyToDeleteTermination"/>
+          <include name="verifyToAddTermination"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- TestClasses.TerminationTestClass -->
+      <class name="TestClasses.TaskTestClass">
+        <methods>
+          <include name="verifyToImportTask"/>
+          <include name="beforeMethod"/>
+          <include name="createReport"/>
+          <include name="verifyToCreateNewTask"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- TestClasses.TaskTestClass -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->

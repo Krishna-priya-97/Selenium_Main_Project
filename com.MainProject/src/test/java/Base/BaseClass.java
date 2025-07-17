@@ -2,6 +2,7 @@ package Base;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import extendReport.ExtentManager;
@@ -32,7 +33,7 @@ public class BaseClass {
 
 	@Parameters("browser")
 	@BeforeMethod(groups = { "TearUp" })
-	public void beforeMethod(String browserValue) throws IOException {
+	public void beforeMethod(@Optional("chrome")String browserValue) throws IOException {
 
 		readProperty();
 

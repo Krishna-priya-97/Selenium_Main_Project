@@ -11,7 +11,7 @@
     <parameter name="browser" value="chrome"/>
     <classes>
      <class name="TestClasses.TaskTestClass"/>
-      <class name="TestClasses.TerminationTestClass"/>
+     <class name="TestClasses.TerminationTestClass"/>
       <class name="TestClasses.LoginPageTestClass"/>
       <class name="TestClasses.DashBoardTestClass"/>
     </classes>

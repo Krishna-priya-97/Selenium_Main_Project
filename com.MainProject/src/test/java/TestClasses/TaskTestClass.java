@@ -28,12 +28,11 @@ public class TaskTestClass extends BaseClass {
 		lp = new LoginPageClass(driver);
 		dp=lp.sign_in(ExcelReadUtility.getStringData(2, 0, "LoginPage"),ExcelReadUtility.getIntData(2, 1, "LoginPage"));
 
-		dp.clickOnTasks();
+		tk=dp.clickOnTasks();
 
-		tk = new TaskPageClass(driver);
 		tk.clickOnImportTasks();
 		String file=tk.getTextOfSelectFile();
-		tk.uploadFile(System.getProperty("user.dir")+"\\src\\test\\resources\\uploaddocument.doc");
+		tk.uploadFile();
 		String change=tk.getTextOfChange();
 		Assert.assertNotEquals(file, change);
 
@@ -45,9 +44,8 @@ public class TaskTestClass extends BaseClass {
 		lp = new LoginPageClass(driver);
 		dp=lp.sign_in(ExcelReadUtility.getStringData(2, 0, "LoginPage"),ExcelReadUtility.getIntData(2, 1, "LoginPage"));
 		
-		dp.clickOnTasks();
+		tk=dp.clickOnTasks();
 
-		tk = new TaskPageClass(driver);
 		tk.clickOnNewTask();
 		tk.clickOnTaskName();
 		String taskName=RandomDataUtility.getTaskName();
