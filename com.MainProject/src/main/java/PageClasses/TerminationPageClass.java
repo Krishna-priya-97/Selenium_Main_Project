@@ -7,13 +7,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import Utilities.GeneralUtilities;
-import utilities.WaitUtility;
+import Utilities.WaitUtilities;
 
 public class TerminationPageClass {
 
 	WebDriver driver;
 	GeneralUtilities glu = new GeneralUtilities();
-	WaitUtility wu = new WaitUtility();
+	WaitUtilities wu = new WaitUtilities();
 
 	public TerminationPageClass(WebDriver driver) {
 

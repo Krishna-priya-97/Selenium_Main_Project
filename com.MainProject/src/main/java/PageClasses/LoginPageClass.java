@@ -6,12 +6,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import Utilities.GeneralUtilities;
-import utilities.WaitUtility;
+import Utilities.WaitUtilities;
 
 public class LoginPageClass {
 
 	WebDriver driver;
-	WaitUtility wu = new WaitUtility();
+	WaitUtilities wu = new WaitUtilities();
 	GeneralUtilities glu = new GeneralUtilities();
 
 	public LoginPageClass(WebDriver driver) {
