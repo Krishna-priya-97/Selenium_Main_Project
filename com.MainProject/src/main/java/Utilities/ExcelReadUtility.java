@@ -15,8 +15,8 @@ public class ExcelReadUtility {
 	static XSSFSheet   sh;
 public static String getStringData(int a,int b,String sheetName) throws IOException//a=row,b=cell
 	{
-		f=new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\NewExcel.xlsx");
-		wb= new XSSFWorkbook(f);
+		f=new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\NewExcel.xlsx");//load file from disk
+		wb= new XSSFWorkbook(f);//load work book
 		sh=wb.getSheet(sheetName);//to get details from sheet
 		XSSFRow r =sh.getRow(a);//to get value from row
 		XSSFCell c = r.getCell(b);//to get value from cell corresponding to the row
@@ -24,8 +24,8 @@ public static String getStringData(int a,int b,String sheetName) throws IOExcept
 	}
 public static String getIntData(int a,int b,String sheetName) throws IOException
 	{
-		f=new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\NewExcel.xlsx");
-		wb= new XSSFWorkbook(f);
+		f=new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\NewExcel.xlsx");//load file from disk
+		wb= new XSSFWorkbook(f);//load work book
 		sh=wb.getSheet(sheetName);//to get details from sheet
 		XSSFRow r =sh.getRow(a);//to get value from row
 		XSSFCell c = r.getCell(b);//to get value from cell corresponding to the row
@@ -36,8 +36,8 @@ public static String getIntData(int a,int b,String sheetName) throws IOException
 
 public static String getFloatData(int a,int b,String sheetName) throws IOException
 	{
-		f=new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\NewExcel.xlsx");
-		wb= new XSSFWorkbook(f);
+		f=new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\NewExcel.xlsx");//load file from disk
+		wb= new XSSFWorkbook(f);//load work book
 		sh=wb.getSheet(sheetName);//to get details from sheet
 		XSSFRow r =sh.getRow(a);//to get value from row
 		XSSFCell c = r.getCell(b);//to get value from cell corresponding to the row
