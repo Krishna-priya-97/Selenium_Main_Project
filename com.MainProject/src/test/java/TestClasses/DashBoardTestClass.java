@@ -36,7 +36,7 @@ public class DashBoardTestClass extends BaseClass {
 	}
 
 	@Test(priority=3,groups = {"Group 2"})
-	public void verifyLogo() throws IOException {
+	public void verifyLogoIsDisplayed() throws IOException {
 
 		lp = new LoginPageClass(driver);
 		dp=lp.sign_in(ExcelReadUtility.getStringData(2, 0, "LoginPage"),ExcelReadUtility.getIntData(2, 1, "LoginPage"));

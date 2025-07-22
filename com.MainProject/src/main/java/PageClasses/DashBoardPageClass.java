@@ -42,16 +42,18 @@ public class DashBoardPageClass {
 	@FindBy(xpath="//a[@title='Tasks']")
 	WebElement tasks;
 
-	public void clickOnSidebarMenu() {
+	public DashBoardPageClass clickOnSidebarMenu() {
 
 		wu.waitForElementToBeClickableByXpathLocator(driver, "//a[@title='Dashboard']", 10);
 		sidebarDashboard.click();
+		return this;
 
 	}
 
-	public void clickOnDashboardMenu() {
+	public DashBoardPageClass clickOnDashboardMenu() {
 
 		invoiceToday.click();
+		return this;
 
 	}
 
@@ -87,9 +89,10 @@ public class DashBoardPageClass {
 
 	}
 
-	public void mouseHoverOnTermination() {
+	public DashBoardPageClass mouseHoverOnTermination() {
 
 		glu.mouseHoverElement_Utility(driver, terminatn);
+		return this;
 	}
 
 	public String getAttributeOfTermination(){

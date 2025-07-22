@@ -51,14 +51,16 @@ public class TaskPageClass {
 		return glu.getTextOfElements(selectFile);
 	}
 
-	public void clickOnImportTasks() {
+	public TaskPageClass clickOnImportTasks() {
 
 		importTasks.click();
+		return this;
 	}
 
-	public void uploadFile() {
+	public TaskPageClass uploadFile() {
 		
 		glu.fileUpload(chooseFile,System.getProperty("user.dir")+"\\src\\test\\resources\\uploaddocument.doc");
+		return this;
 
 	}
 
@@ -67,46 +69,54 @@ public class TaskPageClass {
 		return glu.getTextOfElements(fileName);
 	}
 
-	public void clickOnUpload() {
+	public TaskPageClass clickOnUpload() {
 
 		upload.click();
+		return this;
 	}
 
-	public void clickOnNewTask() {
+	public TaskPageClass clickOnNewTask() {
 
 		newTask.click();
+		return this;
 	}
 
-	public void clickOnTaskName() {
+	public TaskPageClass clickOnTaskName() {
 
 		taskName.click();
+		return this;
 
 	}
 
-	public void updateTaskNameViaSendkeys(String taskname) {
+	public TaskPageClass updateTaskNameViaSendkeys(String taskname) {
 
 		taskName.sendKeys(taskname);
+		return this;
 	}
 
-	public void clickOnDueDate() {
+	public TaskPageClass clickOnDueDate() {
 
 		dueDate.click();
+		return this;
 	}
 
-	public void dueDateInsertionViaSendKeys(String date) {
+	public TaskPageClass dueDateInsertionViaSendKeys(String date) {
 
 		dueDate.sendKeys(date);
+		return this;
 
 	}
 
-	public void pressEnterKey() {
+	public TaskPageClass pressEnterKey() {
 
 		glu.pressENTERKeyUsingKeyDown(driver);
+		return this;
 	}
 
-	public void clickOnSave() {
+	public TaskPageClass clickOnSave() {
 
 		save.click();
+		return this;
 	}
 
 	public String getTextOfNewTaskName() {
@@ -114,10 +124,11 @@ public class TaskPageClass {
 		return glu.getTextOfElements(newTaskName);
 	}
 	
-	public void clickOnAllTask() {
+	public TaskPageClass clickOnAllTask() {
 		
 		wu.waitForElementToBeClickableByXpathLocator(driver, "//a[contains(text(),'All Task')]", 10);
 		allTask.click();
+		return this;
 	}
 
 	public String getTextOfChange() {

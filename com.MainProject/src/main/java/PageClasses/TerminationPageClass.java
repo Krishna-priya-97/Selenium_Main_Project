@@ -42,60 +42,71 @@ public class TerminationPageClass {
 	@FindBy(xpath="//table[@id='DataTables']/tbody/tr[1]/td")
 	WebElement firstEmployeeName;
 
-	public void clickOnNewTermination() {
+	public TerminationPageClass clickOnNewTermination() {
 
 		newTermination.click();
+		return this;
 	}
 	
-	public void clickOnEmployeeName() {
+	public TerminationPageClass clickOnEmployeeName() {
 
 		employeeName.click();
+		return this;
 	}
-	public void employeeNameInsertionViaSendKeys(String name) {
+	public TerminationPageClass employeeNameInsertionViaSendKeys(String name) {
 
 		employeeName.sendKeys(name);
+		return this;
 
 	}
-	public void clickOnNoticeDate() {
+	public TerminationPageClass clickOnNoticeDate() {
 
 		wu.waitForElementToBeClickableByXpathLocator(driver, "//input[@name='notice_date']", 10);
 		noticeDate.click();
+		return this;
 	}
 
-	public void noticeDateInsertionViaSendKeys(String date) {
+	public TerminationPageClass noticeDateInsertionViaSendKeys(String date) {
 
 		noticeDate.sendKeys(date);
+		return this;
 
 	}
 
-	public void pressEnterKey() {
+	public TerminationPageClass pressEnterKey() {
 
 		glu.pressENTERKeyUsingKeyDown(driver);
+		return this;
 	}
 
-	public void clickOnTerminationDate() {
+	public TerminationPageClass clickOnTerminationDate() {
 
 		terminationDate.click();
+		return this;
 
 	}
 
-	public void terminationDateInsertionViaSendKeys(String date) {
+	public TerminationPageClass terminationDateInsertionViaSendKeys(String date) {
 
 		terminationDate.sendKeys(date);
+		return this;
 	}
 
-	public void clickOnSave() {
+	public TerminationPageClass clickOnSave() {
 		save.click();
+		return this;
 	}
 	
-	public void clickOnSearchAllColumns() {
+	public TerminationPageClass clickOnSearchAllColumns() {
 
 		searchAllColumns.click();
+		return this;
 	}
 	
-	public void searchViaSendKeys(String name) {
+	public TerminationPageClass searchViaSendKeys(String name) {
 
 		searchAllColumns.sendKeys(name);
+		return this;
 
 	}
 	
@@ -104,24 +115,28 @@ public class TerminationPageClass {
 		return glu.getTextOfElements(firstEmployeeName);
 	}
 	
-	public void clickOnDelete() {
+	public TerminationPageClass clickOnDelete() {
 		
 		delete.click();
+		return this;
 	}
 	
-	public void deleteAlertAcceptance() {
+	public TerminationPageClass deleteAlertAcceptance() {
 		
 		glu.alertAccept(driver);
+		return this;
 	}
 
-	public void updateEmployeeNameViaSendkeys(String name) {
+	public TerminationPageClass updateEmployeeNameViaSendkeys(String name) {
 		
 		employeeName.sendKeys(name);
+		return this;
 	}
 	
-	public void clickOnAllTermination() {
+	public TerminationPageClass clickOnAllTermination() {
 		
 		allTermination.click();
+		return this;
 		
 	}
 

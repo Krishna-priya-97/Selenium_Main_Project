@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>14/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>13/1/3</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jul 17 13:00:30 IST 2025</td>
+<td>Started on:</td><td>Tue Jul 22 16:20:29 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>163 seconds (163604 ms)</td>
+<tr><td>Total time:</td><td>209 seconds (209344 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,58 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestClasses.TerminationTestClass.verifyToDeleteTermination()'><b>verifyToDeleteTermination</b><br>Test class: TestClasses.TerminationTestClass</td>
+<td><div><pre>java.lang.AssertionError: expected [Abcy] but found [Aiby Ann Abraham]
+	at TestClasses.TerminationTestClass.verifyToDeleteTermination(TerminationTestClass.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace419441460", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace419441460'><pre>java.lang.AssertionError: expected [Abcy] but found [Aiby Ann Abraham]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at TestClasses.TerminationTestClass.verifyToDeleteTermination(TerminationTestClass.java:57)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>9</td>
+<td>TestClasses.TerminationTestClass@44be0077</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,75 +128,294 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestClasses.TerminationTestClass.verifyToAddTermination()'><b>verifyToAddTermination</b><br>Test class: TestClasses.TerminationTestClass</td>
-<td></td>
-<td>13</td>
-<td>TestClasses.TerminationTestClass@44be0077</td></tr>
-<tr>
-<td title='TestClasses.LoginPageTestClass.verifyUnsuccessfulLogin()'><b>verifyUnsuccessfulLogin</b><br>Test class: TestClasses.LoginPageTestClass<br>Parameters: admin, 1234567</td>
-<td></td>
-<td>0</td>
-<td>TestClasses.LoginPageTestClass@2205a05d</td></tr>
-<tr>
 <td title='TestClasses.LoginPageTestClass.verifyUnsuccessfulLogin()'><b>verifyUnsuccessfulLogin</b><br>Test class: TestClasses.LoginPageTestClass<br>Parameters: adminn, 123456</td>
 <td></td>
 <td>0</td>
 <td>TestClasses.LoginPageTestClass@2205a05d</td></tr>
 <tr>
-<td title='TestClasses.DashBoardTestClass.verifyPageTitle()'><b>verifyPageTitle</b><br>Test class: TestClasses.DashBoardTestClass</td>
+<td title='TestClasses.DashBoardTestClass.verifySidebarMenuExpandsOnClick()'><b>verifySidebarMenuExpandsOnClick</b><br>Test class: TestClasses.DashBoardTestClass</td>
 <td></td>
-<td>6</td>
+<td>16</td>
 <td>TestClasses.DashBoardTestClass@72ef8d15</td></tr>
 <tr>
-<td title='TestClasses.DashBoardTestClass.verifyTheTooltipTerminationIsShowingWhileHoveringMouseOnElement()'><b>verifyTheTooltipTerminationIsShowingWhileHoveringMouseOnElement</b><br>Test class: TestClasses.DashBoardTestClass</td>
+<td title='TestClasses.LoginPageTestClass.verifySuccessfulLogin()'><b>verifySuccessfulLogin</b><br>Test class: TestClasses.LoginPageTestClass</td>
 <td></td>
-<td>8</td>
-<td>TestClasses.DashBoardTestClass@72ef8d15</td></tr>
+<td>7</td>
+<td>TestClasses.LoginPageTestClass@2205a05d</td></tr>
 <tr>
 <td title='TestClasses.DashBoardTestClass.verifyDashboardMenuExpandsOnClick()'><b>verifyDashboardMenuExpandsOnClick</b><br>Test class: TestClasses.DashBoardTestClass</td>
 <td></td>
 <td>10</td>
 <td>TestClasses.DashBoardTestClass@72ef8d15</td></tr>
 <tr>
-<td title='TestClasses.TerminationTestClass.verifyToDeleteTermination()'><b>verifyToDeleteTermination</b><br>Test class: TestClasses.TerminationTestClass</td>
-<td></td>
-<td>10</td>
-<td>TestClasses.TerminationTestClass@44be0077</td></tr>
-<tr>
-<td title='TestClasses.LoginPageTestClass.verifySuccessfulLogin()'><b>verifySuccessfulLogin</b><br>Test class: TestClasses.LoginPageTestClass</td>
-<td></td>
-<td>6</td>
-<td>TestClasses.LoginPageTestClass@2205a05d</td></tr>
-<tr>
 <td title='TestClasses.DashBoardTestClass.verifyDashboardURL()'><b>verifyDashboardURL</b><br>Test class: TestClasses.DashBoardTestClass</td>
 <td></td>
 <td>6</td>
 <td>TestClasses.DashBoardTestClass@72ef8d15</td></tr>
 <tr>
-<td title='TestClasses.LoginPageTestClass.verifyUnsuccessfulLogin()'><b>verifyUnsuccessfulLogin</b><br>Test class: TestClasses.LoginPageTestClass<br>Parameters: adminn, 1234567</td>
+<td title='TestClasses.TaskTestClass.verifyToImportTask()'><b>verifyToImportTask</b><br>Test class: TestClasses.TaskTestClass</td>
+<td></td>
+<td>17</td>
+<td>TestClasses.TaskTestClass@791d1f8b</td></tr>
+<tr>
+<td title='TestClasses.TaskTestClass.verifyToCreateNewTask()'><b>verifyToCreateNewTask</b><br>Test class: TestClasses.TaskTestClass</td>
+<td></td>
+<td>15</td>
+<td>TestClasses.TaskTestClass@791d1f8b</td></tr>
+<tr>
+<td title='TestClasses.LoginPageTestClass.verifyUnsuccessfulLogin()'><b>verifyUnsuccessfulLogin</b><br>Test class: TestClasses.LoginPageTestClass<br>Parameters: admin, 1234567</td>
 <td></td>
 <td>0</td>
 <td>TestClasses.LoginPageTestClass@2205a05d</td></tr>
 <tr>
-<td title='TestClasses.TaskTestClass.verifyToImportTask()'><b>verifyToImportTask</b><br>Test class: TestClasses.TaskTestClass</td>
+<td title='TestClasses.DashBoardTestClass.verifyLogoIsDisplayed()'><b>verifyLogoIsDisplayed</b><br>Test class: TestClasses.DashBoardTestClass</td>
 <td></td>
-<td>16</td>
-<td>TestClasses.TaskTestClass@791d1f8b</td></tr>
-<tr>
-<td title='TestClasses.DashBoardTestClass.verifyLogo()'><b>verifyLogo</b><br>Test class: TestClasses.DashBoardTestClass</td>
-<td></td>
-<td>7</td>
+<td>8</td>
 <td>TestClasses.DashBoardTestClass@72ef8d15</td></tr>
 <tr>
-<td title='TestClasses.DashBoardTestClass.verifySidebarMenuExpandsOnClick()'><b>verifySidebarMenuExpandsOnClick</b><br>Test class: TestClasses.DashBoardTestClass</td>
+<td title='TestClasses.DashBoardTestClass.verifyPageTitle()'><b>verifyPageTitle</b><br>Test class: TestClasses.DashBoardTestClass</td>
 <td></td>
-<td>12</td>
+<td>6</td>
 <td>TestClasses.DashBoardTestClass@72ef8d15</td></tr>
 <tr>
-<td title='TestClasses.TaskTestClass.verifyToCreateNewTask()'><b>verifyToCreateNewTask</b><br>Test class: TestClasses.TaskTestClass</td>
+<td title='TestClasses.TerminationTestClass.verifyToAddTermination()'><b>verifyToAddTermination</b><br>Test class: TestClasses.TerminationTestClass</td>
 <td></td>
-<td>16</td>
-<td>TestClasses.TaskTestClass@791d1f8b</td></tr>
+<td>13</td>
+<td>TestClasses.TerminationTestClass@44be0077</td></tr>
+<tr>
+<td title='TestClasses.LoginPageTestClass.verifyUnsuccessfulLogin()'><b>verifyUnsuccessfulLogin</b><br>Test class: TestClasses.LoginPageTestClass<br>Parameters: adminn, 1234567</td>
+<td></td>
+<td>1</td>
+<td>TestClasses.LoginPageTestClass@2205a05d</td></tr>
+<tr>
+<td title='TestClasses.DashBoardTestClass.verifyTheTooltipTerminationIsShowingWhileHoveringMouseOnElement()'><b>verifyTheTooltipTerminationIsShowingWhileHoveringMouseOnElement</b><br>Test class: TestClasses.DashBoardTestClass</td>
+<td></td>
+<td>8</td>
+<td>TestClasses.DashBoardTestClass@72ef8d15</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestClasses.TerminationTestClass.verifyToDeleteTermination()'><b>verifyToDeleteTermination</b><br>Test class: TestClasses.TerminationTestClass</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=138.0.7204.158)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b43be8d4fb8a1ebcf490972c558f0111, getElementText {id=f.C03FEE66A71D385E45DEFA356FEC0BA6.d.410A79C85955E3D8D29F0A8D60FABD0A.e.2194}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57275}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57275/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b43be8d4fb8a1ebcf490972c558f0111)] -&gt; xpath: //table[@id=&apos;DataTables&apos;]/tbody/tr[1]/td]
+Session ID: b43be8d4fb8a1ebcf490972c558f0111
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.getText(Unknown Source)
+	at Utilities.GeneralUtilities.getTextOfElements(GeneralUtilities.java:17)
+	at PageClasses.TerminationPageClass.getTextOfName(TerminationPageClass.java:115)
+	at TestClasses.TerminationTestClass.verifyToDeleteTermination(TerminationTestClass.java:62)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1075314220", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1075314220'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=138.0.7204.158)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b43be8d4fb8a1ebcf490972c558f0111, getElementText {id=f.C03FEE66A71D385E45DEFA356FEC0BA6.d.410A79C85955E3D8D29F0A8D60FABD0A.e.2194}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57275}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57275/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b43be8d4fb8a1ebcf490972c558f0111)] -&gt; xpath: //table[@id=&apos;DataTables&apos;]/tbody/tr[1]/td]
+Session ID: b43be8d4fb8a1ebcf490972c558f0111
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.getText(Unknown Source)
+	at Utilities.GeneralUtilities.getTextOfElements(GeneralUtilities.java:17)
+	at PageClasses.TerminationPageClass.getTextOfName(TerminationPageClass.java:115)
+	at TestClasses.TerminationTestClass.verifyToDeleteTermination(TerminationTestClass.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>9</td>
+<td>TestClasses.TerminationTestClass@44be0077</td></tr>
+<tr>
+<td title='TestClasses.TerminationTestClass.verifyToDeleteTermination()'><b>verifyToDeleteTermination</b><br>Test class: TestClasses.TerminationTestClass</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=138.0.7204.158)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2bb7f41f3899672ed2d63d1c41ca219c, getElementText {id=f.B51E2C19B5584C64FA6FB94DF5847CBB.d.064158EB71FACA3526CD0E7FE8B9E7C9.e.2190}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57299/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2bb7f41f3899672ed2d63d1c41ca219c)] -&gt; xpath: //table[@id=&apos;DataTables&apos;]/tbody/tr[1]/td]
+Session ID: 2bb7f41f3899672ed2d63d1c41ca219c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.getText(Unknown Source)
+	at Utilities.GeneralUtilities.getTextOfElements(GeneralUtilities.java:17)
+	at PageClasses.TerminationPageClass.getTextOfName(TerminationPageClass.java:115)
+	at TestClasses.TerminationTestClass.verifyToDeleteTermination(TerminationTestClass.java:56)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace284427775", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace284427775'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=138.0.7204.158)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2bb7f41f3899672ed2d63d1c41ca219c, getElementText {id=f.B51E2C19B5584C64FA6FB94DF5847CBB.d.064158EB71FACA3526CD0E7FE8B9E7C9.e.2190}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57299/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2bb7f41f3899672ed2d63d1c41ca219c)] -&gt; xpath: //table[@id=&apos;DataTables&apos;]/tbody/tr[1]/td]
+Session ID: 2bb7f41f3899672ed2d63d1c41ca219c
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.getText(Unknown Source)
+	at Utilities.GeneralUtilities.getTextOfElements(GeneralUtilities.java:17)
+	at PageClasses.TerminationPageClass.getTextOfName(TerminationPageClass.java:115)
+	at TestClasses.TerminationTestClass.verifyToDeleteTermination(TerminationTestClass.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>8</td>
+<td>TestClasses.TerminationTestClass@44be0077</td></tr>
+<tr>
+<td title='TestClasses.TerminationTestClass.verifyToDeleteTermination()'><b>verifyToDeleteTermination</b><br>Test class: TestClasses.TerminationTestClass</td>
+<td><div><pre>java.lang.AssertionError: expected [Abcy] but found [Aiby Ann Abraham]
+	at TestClasses.TerminationTestClass.verifyToDeleteTermination(TerminationTestClass.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1179830093", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1179830093'><pre>java.lang.AssertionError: expected [Abcy] but found [Aiby Ann Abraham]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at TestClasses.TerminationTestClass.verifyToDeleteTermination(TerminationTestClass.java:57)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>13</td>
+<td>TestClasses.TerminationTestClass@44be0077</td></tr>
 </table><p>
 </body>
 </html>
